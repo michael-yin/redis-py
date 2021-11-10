@@ -708,7 +708,7 @@ class Redis(object):
                  ssl_cert_reqs='required', ssl_ca_certs=None,
                  ssl_check_hostname=False,
                  max_connections=None, single_connection_client=False,
-                 health_check_interval=0, client_name=None, username=None):
+                 health_check_interval=250, client_name=None, username=None):
         if not connection_pool:
             if charset is not None:
                 warnings.warn(DeprecationWarning(
